@@ -1,0 +1,22 @@
+{
+	"name": "@Jazz Message Extension",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"permissions":[
+		"tabs", "http://*/*"
+	],
+
+	"content_scripts":[
+		{
+		    "matches":["http://www.jazz.co.jp/members/group/message_check.html"],
+		    "js":[
+		    	"jquery-2.1.0.min.js",
+		    	"ecl.js",
+		    	"messageExtension.js"
+			]
+		}
+    ],
+
+	"description": "Additonal functions of @Jazz Message"
+}
